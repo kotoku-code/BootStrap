@@ -1,918 +1,517 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@kotoku-code 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-davecmd
-/
-newsweek-replica-bootstrap
-1
-00
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
-newsweek-replica-bootstrap/index.html
-@davecmd davecmd added viewport resizing
-cced256 on Dec 6, 2019
-882 lines (789 sloc)  37.5 KB
-  
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <!-- If IE use the latest rendering engine -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
-  <link rel="shortcut icon" href="https://g.newsweek.com/themes/newsweek/favicons/favicon-96x96.png" />
-  <script src="https://kit.fontawesome.com/50973e608d.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-  <div class="container">
-    <!-- Content here -->
-    <div class="row newsweek-header fixed-header main-header">
-      <div class="col-sm date-header ">
-        <span>Mon, Oct 07, 2019</span>
-      </div>
-      <div class="col-sm newsweek-logo">
-        <img src="images/Newsweek_Logo.svg">
-      </div>
-      <div class="col-sm link-header">
-        <div>
-          <a href="" class="font-weight-bold mr-3" id="sign-in">SIGN IN</a>
-          <a href="" class="font-weight-bold" id="subscribe">SUBSCRIBE</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row header-bottom main-header">
-      <nav class="navbar navbar-expand">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">U.S</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">World</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Business</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tech & Science</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Culture</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Newsgeek</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sports</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Health</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Opinion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vantage</a>
-          </li>
-          <!--
-            <li class="nav-item">
-              <a class="nav-link" href="#">Search</a>
-            </li>
-          -->
-        </ul>
-      </nav>
-    </div>
-
-    <div class="row newsweek-header fixed-header alt-header">
-      <div class=" newsweek-logo-small d-inline-block">
-        <img src="images/Newsweek_Logo.svg">
-      </div>
-      <div class=" link-header d-inline-block float-right pt-3">
-        <div>
-          <a href="" class="font-weight-bold mr-3" id="sign-in">SIGN IN</a>
-          <a href="" class="font-weight-bold" id="subscribe">SUBSCRIBE</a>
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xl-3 col-md-5 col-sm-12">
-        <h1>FEATURED STORIES</h1>
-        <div class="card border-0 pb-3">
-          <div class="image-with-category">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1533715/donald-trump.jpg?w=397&h=265&q=90&f=0b7075067a51c905de62355a98f35977">
-            <div>NEWS</div>
-          </div>
-          <div class="card-body p-0">
-            <h2 class="card-title">Former Trump Administration National Security Officials Defend Whistleblower</h2>
-            <p class="card-text">"We applaud the whistleblower," reads the letter signed by 90 former national security
-              officials, including former CIA Director John Brennan and former Director of National Intelligence James
-              Clapper.</p>
-          </div>
-
-
-        </div>
-        <div class="card border-0 pb-3">
-          <div class="image-with-category">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-            <div>POLITICS</div>
-          </div>
-          <div class="card-body p-0">
-            <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-            <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-              Democratic probe into the president's conduct.
-            </p>
-          </div>
-        </div>
-
-        <div class="card border-0 pb-3">
-          <div class="image-with-category">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-            <div>POLITICS</div>
-          </div>
-          <div class="card-body p-0">
-            <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-            <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-              Democratic probe into the president's conduct.
-            </p>
-          </div>
-        </div>
-
-        <div class="card border-0 pb-3">
-          <div class="image-with-category">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-            <div>POLITICS</div>
-          </div>
-          <div class="card-body p-0">
-            <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-            <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-              Democratic probe into the president's conduct.
-            </p>
-          </div>
-        </div>
-
-        <div class="card pb-3 mb-3">
-          <div class="image-with-category border">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-            <div class="blue">SPONSORED INSIGHT</div>
-          </div>
-          <div class="card-body p-3">
-            <h2 class="card-title">Why Haven’t You Thought About Coding?
-            </h2>
-            <p class="card-text">The industry demand for coders is skyrocketing. It is increasingly recognized as a
-              rewarding, future-proof and flexible vocation and it’s easier to jump on the train than you might think.
-              Find out more...
-            </p>
-          </div>
-        </div>
-
-
-
-      </div>
-      <div class="col-xl-5 col-md-7 col-sm-12">
-        <h1>TOP STORY</h1>
-        <div class="card border-0" >
-          <div class="image-with-category">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1533715/donald-trump.jpg?w=397&h=265&q=90&f=0b7075067a51c905de62355a98f35977">
-            <div>NEWS</div>
-          </div>
-          <div class="card-body p-0">
-            <h2 class="card-title">Former Trump Administration National Security Officials Defend Whistleblower</h2>
-            <p class="card-text">"We applaud the whistleblower," reads the letter signed by 90 former national security
-              officials, including former CIA Director John Brennan and former Director of National Intelligence James
-              Clapper.</p>
-          </div>
-        </div>
-
-        <div class="culture-travel pb-4">
-          <h1 class="grid-header pl-2">CULTURE & TRAVEL</h1>
-
-          <div class="card border-0">
-            <div class="image-with-category">
-              <img class="card-img-top"
-                src="https://d.newsweek.com/en/full/1536974/hussaini-suspension-bridge-hunza-pakistan.jpg?w=397&h=265&f=7f2f5189ac10daba7ad83fdb1e58231a">
-            </div>
-            <div class="card-body p-0">
-              <h2 class="card-title ml-2 pt-2">Will the Royal Visit Revive Pakistan's Tourism?</h2>
-              <p class="card-text ml-2 light-gray">With a boost from the Royals, Pakistan is primed to finally take its
-                rightful place as one of the world's great adventure destinations.
-              </p>
-              <a class="grid-tag ml-2" href="">Royals</a>
-
-            </div>
-          </div>
-
-          <div class="card border-0">
-            <div class="image-with-category">
-              <img class="card-img-top"
-                src="https://d.newsweek.com/en/full/1536974/hussaini-suspension-bridge-hunza-pakistan.jpg?w=397&h=265&f=7f2f5189ac10daba7ad83fdb1e58231a">
-            </div>
-            <div class="card-body p-0">
-              <h2 class="card-title ml-2 pt-2">Will the Royal Visit Revive Pakistan's Tourism?</h2>
-              <p class="card-text ml-2 light-gray">With a boost from the Royals, Pakistan is primed to finally take its
-                rightful place as one of the world's great adventure destinations.
-              </p>
-              <a class="grid-tag ml-2" href="">Royals</a>
-
-            </div>
-          </div>
-
-          <div class="card border-0">
-            <div class="image-with-category">
-              <img class="card-img-top"
-                src="https://d.newsweek.com/en/full/1536974/hussaini-suspension-bridge-hunza-pakistan.jpg?w=397&h=265&f=7f2f5189ac10daba7ad83fdb1e58231a">
-            </div>
-            <div class="card-body p-0">
-              <h2 class="card-title ml-2 pt-2">Will the Royal Visit Revive Pakistan's Tourism?</h2>
-              <p class="card-text ml-2 light-gray">With a boost from the Royals, Pakistan is primed to finally take its
-                rightful place as one of the world's great adventure destinations.
-              </p>
-              <a class="grid-tag ml-2" href="">Royals</a>
-
-            </div>
-          </div>
-
-          <div class="card border-0">
-            <div class="image-with-category">
-              <img class="card-img-top"
-                src="https://d.newsweek.com/en/full/1536974/hussaini-suspension-bridge-hunza-pakistan.jpg?w=397&h=265&f=7f2f5189ac10daba7ad83fdb1e58231a">
-            </div>
-            <div class="card-body p-0">
-              <h2 class="card-title ml-2 pt-2">Will the Royal Visit Revive Pakistan's Tourism?</h2>
-              <p class="card-text ml-2 light-gray">With a boost from the Royals, Pakistan is primed to finally take its
-                rightful place as one of the world's great adventure destinations.
-              </p>
-              <a class="grid-tag ml-2" href="">Royals</a>
-
-            </div>
-          </div>
-
-        </div>
-        <h1 class="pb-2 border-bottom">MORE STORIES</h1>
-        <ul class="list-group-flush opinion p-0" >
-          <li class="list-group-item opinion border-0 px-0 py-0" >
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-
-            </div>
-          </li>
-
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-            </div>
-          </li>
-
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-            </div>
-          </li>
-
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-            </div>
-          </li>
-
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-            </div>
-          </li>
-
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-            </div>
-          </li>
-
-          <li class="list-group-item opinion px-0 pt-2 pb-4">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-            </div>
-          </li>
-
-
-
-
-        </ul>
-      </div>
-      <div class="col-xl-4 col-sm-12">
-        <a href="">
-          <h1>OPINION</h1>
-        </a>
-        <ul class="list-group-flush opinion p-0">
-          <li class="list-group-item opinion border-0 px-0 py-0">
-            <a href="">
-              <img class="align-baseline"
-                src="https://d.newsweek.com/en/full/1533434/swalwell2.png?w=63&h=63&f=d971ae43a285cecef71d053703ec26ad">
-            </a>
-            <div class="opinion-description">
-              <a href="" class="red-hover">Swalwell: Trump and His Gang No Different From Street Gangs I've
-                Prosecuted</a>
-              <p>BY ERIC SWALWELL</p>
-            </div>
-          </li>
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline"
-                src="https://d.newsweek.com/en/full/1537591/dan-federico.png?w=63&h=63&f=cd8f821f25409abbf1140c506be93c13">
-            </a>
-            <div class="opinion-description">
-              <a href="" class="red-hover">We Say We Do Our Best Not to Hurt Civilians. But Our Best Isn't Good
-                Enough</a>
-              <p>BY FEDERICO BORELLO AND DAN MAHANTY
-              </p>
-            </div>
-          </li>
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline"
-                src="https://d.newsweek.com/en/full/1536928/anne-richard.png?w=63&h=63&f=1dd554b5403d36dcc4056d1792a040b2">
-            </a>
-            <div class="opinion-description">
-              <a href="" class="red-hover">I'm a Former Assistant Secretary of State. I Was Arrested Protesting
-                Pompeo</a>
-              <p>BY ANNE C RICHARD
-              </p>
-            </div>
-          </li>
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline"
-                src="https://d.newsweek.com/en/full/83499/newt-gingrich.png?w=63&h=63&l=48&t=55&f=d8b4f8dfaad8a5f0f71bffcc6c0d6a77">
-            </a>
-            <div class="opinion-description">
-              <a href="" class="red-hover">The Old Democratic Party Is Dead. Last Night's Debate Proved It
-              </a>
-              <p>BY NEWT GINGRICH
-              </p>
-            </div>
-          </li>
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline"
-                src="https://d.newsweek.com/en/full/1536918/rafael-shimunov.png?w=63&h=63&f=18087c2e5ae0405fa8d565c8595a0e80">
-            </a>
-            <div class="opinion-description">
-              <a href="" class="red-hover">Ellen Is Trying Erase Bush's War Crimes. My Video Wouldn't Let Her
-              </a>
-              <p>BY RAFAEL SHIMUNOV
-              </p>
-            </div>
-          </li>
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline"
-                src="https://d.newsweek.com/en/full/1536930/amr-magdi.png?w=63&h=63&f=81e408072a0766191920791aed00d2cf">
-            </a>
-            <div class="opinion-description">
-              <a href="" class="red-hover">In Egypt, Institutional Insanity Is the New Normal
-              </a>
-              <p>BY AMR MAGDI
-              </p>
-            </div>
-          </li>
-        </ul>
-
-        <a href="">
-          <h1>LATEST NEWS</h1>
-        </a>
-        <ul class="list-group-flush opinion p-0">
-          <li class="list-group-item opinion border-0 px-0 py-0">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-
-            </div>
-          </li>
-
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-            </div>
-          </li>
-
-
-
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-            </div>
-          </li>
-
-          <li class="list-group-item opinion px-0 pt-2 pb-0">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-            </div>
-          </li>
-
-          <li class="list-group-item opinion px-0 pt-2 pb-4">
-            <a href="">
-              <img class="align-baseline image-small"
-                src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-            </a>
-            <div class="opinion-description news">
-              <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-              </a>
-            </div>
-          </li>
-
-
-          <div class="card pb-3 mb-3">
-            <div class="image-with-category border">
-              <img class="card-img-top"
-                src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-              <div class="blue">SPONSORED INSIGHT</div>
-            </div>
-            <div class="card-body p-3">
-              <h2 class="card-title">Why Haven’t You Thought About Coding?
-              </h2>
-              <p class="card-text">The industry demand for coders is skyrocketing. It is increasingly recognized as a
-                rewarding, future-proof and flexible vocation and it’s easier to jump on the train than you might think.
-                Find out more...
-              </p>
-            </div>
-          </div>
-
-          <div class="gray-box p-4 m-4">
-            <div class="flexbox">
-              <span class="icon-n mr-3"></span>
-              <h3 class="newsletter font-weight-bold">SIGN UP FOR OUR NEWSLETTER</h3>
-            </div>
-            <button class="btn-secondary border-0 p-2 font-weight-bold mb-2">SIGN UP <i
-                class="fas fa-chevron-right"></i></button>
-            <div class="font-weight-bold">Update your preferences <i class="fas fa-angle-double-right"></i></div>
-          </div>
-
-          <div class="card pb-3 mb-3">
-            <div class="image-with-category border">
-              <img class="card-img-top"
-                src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-              <div class="blue">SPONSORED INSIGHT</div>
-            </div>
-            <div class="card-body p-3">
-              <h2 class="card-title">Why Haven’t You Thought About Coding?
-              </h2>
-              <p class="card-text">The industry demand for coders is skyrocketing. It is increasingly recognized as a
-                rewarding, future-proof and flexible vocation and it’s easier to jump on the train than you might think.
-                Find out more...
-              </p>
-            </div>
-          </div>
-        </ul>
-
-
-      </div>
-
-
-    </div>
-
-
-    <div class="editor-grid">
-      <span class="editor-title pb-2 border-bottom text-center font-weight-bold"> <span class="icon-n mr-3"></span>EDITOR'S PICK</span>
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>POLITICS</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-          <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-            Democratic probe into the president's conduct.
-          </p>
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>POLITICS</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-          <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-            Democratic probe into the president's conduct.
-          </p>
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>POLITICS</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-          <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-            Democratic probe into the president's conduct.
-          </p>
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>POLITICS</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-          <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-            Democratic probe into the president's conduct.
-          </p>
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>POLITICS</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-          <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-            Democratic probe into the president's conduct.
-          </p>
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>POLITICS</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-          <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-            Democratic probe into the president's conduct.
-          </p>
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>POLITICS</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-          <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-            Democratic probe into the president's conduct.
-          </p>
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>POLITICS</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-          <p class="card-text">Pew Research Center data shows that 54 percent of adult Americans surveyed now back the
-            Democratic probe into the president's conduct.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="slideshow-grid">
-      <span class="slideshow-title pb-2 border-bottom text-center font-weight-bold"><span class="icon-n mr-3"></span>FEATURED SLIDESHOWS</span>
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>40</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>40</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-
-        </div>
-      </div>
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>40</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>40</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>40</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-          <div>40</div>
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="multi-grid border-bottom pb-5 mb-3">
-      <span class="multi-grid-title pb-2 border-bottom font-weight-bold">U.S.</span>
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-
-        </div>
-      </div>
-
-      <div class="card border-0 pb-3">
-        <div class="image-with-category">
-          <img class="card-img-top"
-            src="https://d.newsweek.com/en/full/1537844/donald-trump-impeachment-support-pew.jpg?w=397&h=265&q=90&f=b6faff906d0b5f514bebe4e620432a26">
-        </div>
-        <div class="card-body p-0">
-          <h2 class="card-title">Most Americans Now Back Trump Impeachment Probe, Young Voters Lead the Way: Poll</h2>
-
-        </div>
-      </div>
-
-      <ul class="list-group-flush opinion p-0">
-        <li class="list-group-item opinion border-0 px-0 py-0">
-          <a href="">
-            <img class="align-baseline image-small"
-              src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-          </a>
-          <div class="opinion-description news">
-            <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-            </a>
-
-          </div>
-        </li>
-
-        <li class="list-group-item opinion px-0 pt-2 pb-0">
-          <a href="">
-            <img class="align-baseline image-small"
-              src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-          </a>
-          <div class="opinion-description news">
-            <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-            </a>
-          </div>
-        </li>
-
-        <li class="list-group-item opinion px-0 pt-2 pb-0">
-          <a href="">
-            <img class="align-baseline image-small"
-              src="https://d.newsweek.com/en/full/1538579/naxos.jpg?w=397&h=265&f=6abd980474f342fe6e5194f7b3720498">
-          </a>
-          <div class="opinion-description news">
-            <a href="" class="red-hover">Study: Humans crossed the Mediterranean Earlier Than Previously Thought
-            </a>
-          </div>
-        </li>
-
-        
-
-      </ul>
-      <span class="two-grid-title pb-2 font-weight-bold">U.S.</span>
-      <span class="one-grid-title pb-2 font-weight-bold">NEWSLETTER</span>
-      <div class="gray-box p-4 subscribe-box ">
-        
-        <div class="magazine">
-          <img
-            src="https://d.newsweek.com/en/full/1531488/october-11-18-2019.jpg?w=170&amp;q=95&amp;f=a78cd4d1f090989a835fd1efa3fa1833">
-          <img class="pence"
-            src="https://d.newsweek.com/en/full/1536427/october-25-2019.jpg?w=170&q=95&f=0333f16b44e9f9eea68d782c8b69ddb4">
-        </div>
-
-        <div class="magazine-text pb-5 mt-5">
-          <h2 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
-          </h1>
-          <p>All Access + Weekly Delivery.
-            Choose A Membership That's Perfect for You!</p>
-          <button class="btn-danger border-0 p-2 font-weight-bold mb-2">SIGN UP <i
-              class="fas fa-chevron-right"></i></button>
-        </div>
-
-    </div>
-    <div class="newsletter-box border">
-      <div class="phone"></div>
-      <div class="newsletter-box-text p-4">
-        <h2 class="font-weight-bold">Daily Briefing
-        </h1>
-        <p>Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
-        <button class="btn-danger border-0 p-2 font-weight-bold mb-2">SIGN UP <i
-            class="fas fa-chevron-right"></i></button>
-      </div>
-    </div>
-  </div>
-    <footer>
-      <div class="footer-social pb-2">
-        <img src="images/newsweek-logo-white.png">
-        <span class="align-bottom">© 2019 NEWSWEEK </span>
-        <div class="social-media float-right mt-3">
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-tumblr"></i>
-          <i class="fab fa-linkedin-in"></i>
-        </div>
-        <div>
-
-        </div>
-      </div>
-      <div class="footer-links">
-        <div class="footer-naviagation-list mt-2">
-          <ul class="footer-list">
-            <li><a href="">About Us</a></li>
-            <li><a href="">Corrections</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Editorial Guidelines</a></li>
-            <li><a href="">Advertise</a></li>
-            <li><a href="">Copyright</a></li>
-          </ul>
-
-          <ul class="footer-list ">
-            <li><a href="">Terms & Conditions</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Cookie Policy</a></li>
-            <li><a href="">Term of Sale</a></li>
-            <li><a href="">Archive</a></li>
-            <li><a href="">Announcements</a></li>
-          </ul>
-
-          <ul class="footer-list">
-            <li id="border-none"><a href="">Consent preferences</a></li>
-          </ul>
-
-        </div>
-
-        <div class="footer-language align-top mt-2 float-right">
-          <span class="pr-3 font-weight-bold align-top">Editions: </span>
-          <ul class="footer-list">
-            <li><a href="">U.S. Edition</a></li>
-            <li><a href="">日本</a></li>
-            <li><a href="">한국</a></li>
-            <li><a href="">Pakistan</a></li>
-            <li><a href="">Polska</a></li>
-            <li><a href="">România</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+   <div class="container-fuild max-width-xl px-5">
+       <h1 class="h-100 bg-danger text-white text-center">Newsweek</h1>
+                <nav class="page-nav navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Newsweek</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                          <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="#">U.S.</a>
+                            <a class="nav-item nav-link" href="#">World</a>
+                            <a class="nav-item nav-link" href="#">Business</a>
+                            <a class="nav-item nav-link" href="#">Tech & Science</a>
+                            <a class="nav-item nav-link" href="#">Culture</a>
+                            <a class="nav-item nav-link" href="#">Sports</a>
+                            <a class="nav-item nav-link" href="#">Health</a>
+                            <a class="nav-item nav-link" href="#">Opinion</a>
+                            <a class="nav-item nav-link" href="#">DELIBLE</a>
+                          </div>
+                        </div>
+                      </nav>
+                    <div class="d-flex flex-row">
+                      <div class="d-flex flex-column">
+                        <div class="p-2">
+                              <div class="block-title">FEATURED STORIES</div>
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/10/gettyimages-180175869.jpg"       alt="GettyImages-180175869" title="" width="397" height="265">
+                              <h3><a href="#">Air Traffic Controller Who Slurred Words Investigated</a></h3>
+                            <div class="summary">
+                              The FAA is investigating the Wednesday night incident.
+                            </div>
+                          <div class="related">
+                              <a href="#">Air Controller Dies After Refusing to Leave Post</a>
+                          </div>
+                        </div>
+                        <div class="p-2">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/10/gettyimages-1053441452.jpg" alt="GettyImages-1053441452" title="" width="397" height="265">
+                              <h3><a href="#">Turkey's Erdogan Hands Khashoggi Killing Tapes to U.S</a></h3>
+                            <div class="summary">
+                                Turkish officials have previously claimed to have recordings of the dissident's murder.
+                            </div>
+                          <div class="related">
+                              <a href="#">Jamal Khashoggi’s Sons Have ‘Faith’ in Saudi Monarchy</a>
+                          </div>
+                        </div>
+                        <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/11/gettyimages-503695190.jpg" alt="GettyImages-503695190" title="" width="397" height="265">
+                            <h3><a href="#">Celebrities Pan Donald Trump Over Wildfire Tweets </a></h3>
+                            <div class="summary">
+                                The fires have already claimed the lives of at least 23.
+                            </div>
+                          <div class="related">
+                              <a href="#">Why a Trump Supporter Doesn't Want Him to Run in 2020</a>
+                          </div>
+                        </div>
+                        <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/10/gettyimages-1032931500.jpg" alt="GettyImages-1032931500" title="" width="397" height="265">
+                            <h3><a href="#">White House Reporter Says Trump Disparages Black Women</a></h3>
+                            <div class="summary">
+                                April Ryan wrote a heartfelt piece in the Washington Post.
+                            </div>
+                          <div class="related">
+                              <a href="#">Trump Says Acosta Video Was 'Not Doctored'</a>
+                          </div>
+                        </div>
+                      </div>   
+                      <div class="d-flex flex-column bg-area">
+                        <div class="p-2 bg-article">
+                            <div class="block-title">TOP STORY</div>
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md/public/2018/11/10/midterms-elections-updates-democrats-continue-gain-ground-lawsuits-recounts-ensue.jpg" alt="Midterms Elections Updates: Democrats Continue to Gain Ground as Lawsuits, Recounts Ensue" title="" width="591" height="394">
+                            <h3><a href="#">Midterm Election Updates: Democrats Gain Ground</a></h3>
+                            <div class="summary">
+                                As of Saturday midday, three races in the Senate, two gubernatorial races and more than a dozen House races were still undecided as votes have continued to trickle in days after the election.     
+                            </div>
+                          <div class="related">
+                              <a href="#">Obama Picks Won More Than Trump In Midterms</a>
+                          </div>
+                        </div>
+
+                        <div class="block-title more">MORE STORIES</div>
+                        <div class="p-2 border-div">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/10/gettyimages-645118552.jpg" alt="GettyImages-645118552" title="" width="135" height="90" ALIGN="left">
+                            <span><h4><a>Trump Awards Medal of Freedom To Wife Of Biggest Donor</a></h4></span>
+                            <div class="summary padding">
+                                Three of the medals will be awarded posthumously.
+                            </div>
+                        </div>
+                        <div class="p-2 border-div">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/11/gettyimages-1058174602.jpg" alt="GettyImages-1058174602" title="" width="135" height="90" ALIGN="left">
+                            <span><h4><a>Dana Rohrabacher Loses House Seat </a></h4></span>
+                            <div class="summary padding">
+                                The 15-term congressman is an outspoken defender of Putin's Russia.
+                            </div>
+                        </div>
+                        <div class="p-2 border-div">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/08/fehaaland01.jpg" alt="FE_Haaland_01" title="" width="135" height="90" ALIGN="left">
+                            <span><h4><a>Native American Women Made History in the Midterms</a></h4></span>
+                            <div class="summary padding">
+                                Opposition to Trump and a growing tribal political network converged to bring more native women into politics than ever before.
+                            </div>
+                        </div>
+                        <div class="p-2 border-div">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/09/gettyimages-454754269.jpg" alt="GettyImages-454754269" title="" width="135" height="90" ALIGN="left">
+                            <span><h4><a>PayPal Shuts Down Alt-Right, Antifa Accounts</a></h4></span>
+                            <div class="summary padding">
+                                The accounts of Atlanta Antifa, Antifa Sacramento, Anti-Fascist Network, the Proud Boys and the alt-right group's founder, Gavin McInnes, were suspended. 
+                            </div>
+                        </div>
+                            <div class="p-2 border-div">
+                                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/09/gettyimages-1021329716-594x594.jpg" alt="gettyimages-1021329716-594x594" title="" width="135" height="90" ALIGN="left">
+                                <span><h4><a>Trump Told Cohen to ‘Get It Done’ Over Hush Payoffs</a></h4></span>
+                            <div class="summary padding">
+                                According to a report, President Donald Trump directed every part of the process of paying off Stormy Daniels and Karen McDougal.
+                            </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column">
+                          <div class="block-title more">OPINION</div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/nw-columnists-christophe-deloire.png" width="63" height="63" ALIGN="left">
+                              <span><a href="#">Trump vs. Acosta: The Attack on Journalism is Spreading</a></span>
+                              <p><a href="#">BY CRISTOPHE DELOIRE</a></p>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/nw-columnists-ilia-salita.png" width="63" height="63" ALIGN="left">
+                              <span><a href="#">Anti-Semitism Followed me from U.S.S.R. to the U.S.</a></span>
+                              <p><a href="#">BY ILIA SALITA</a></p>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/ben_shapiro_v2.png" width="63" height="63" ALIGN="left">
+                              <span><a href="#">How to Win in 2020</a></span>
+                              <p><a href="#">BY BEN SHAPIRO</a></p>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/robert_reich.png" widht="63" height="63" ALIGN="left">
+                              <span><a href="#">America Has Rejected Trumpism</a></span>
+                              <p><a href="#">BY ROBERT REICH</a></p>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/column-headshot-tawakkol-karman.png" width="63" height="63" ALIGN="left">
+                              <span><a href="#">Saudi Arabia Has Been Allowed To Get Away With Murder</a></span>
+                              <p><a href="#">BY TAWAKKOL KARMAN</a></p>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/square_thumbnail/public/23544/profile_image/nw-columnists-seth-abraham.png" width="63" height="63" ALIGN="left">
+                              <span><a href="#">Beto O'Rourke Could Be America's Next President</a></span>
+                              <p><a href="#">BY SETH ABRAMSON</a></p>
+                          </div>
+                          <div class="block-title more">LATEST NEWS</div>
+                          <div class="p-2 last-div">
+                              <img  src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/11/trolley.jpg" alt="trolley" title="" width="135" height="90" ALIGN="left">
+                              <span><a href="#">Homeless Hero Used Shopping Cart to Stop Terror Attack</a></span>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img  src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/07/gettyimages-873013516-594x594.jpg" alt="gettyimages-873013516-594x594" title="" width="135" height="90" ALIGN="left">
+                              <span><a href="#">Veterans Day Quotes 2018</a></span>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/08/veterans-day-how-it-different-memorial-day.jpg" alt="veterans day how is it different from memorial day " title="" width="135" height="90" ALIGN="left">
+                              <span><a href="#">Veterans Day Facts, Differences From Memorial Day</a></span>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/11/gettyimages-625647882.jpg" alt="GettyImages-625647882" title="" width="135" height="90" ALIGN="left">
+                              <span><a href="#">Best Black Friday 2018 Sales, Deals and Ads</a></span>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/veterans-day-doodle.png" alt="veterans day doodle" title="" width="135" height="90" ALIGN="left">
+                              <span><a href="#">Veteran's Day Google Doodle Honors Veterans, Stories </a></span>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/butte-county-camp-fire.jpg" alt="butte county camp fire" title="" width="135" height="90" ALIGN="left">
+                              <span><a href="#">Camp Fire Death Toll Rises To 23</a></span>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/10/27/powerball-logo-shade-color.png" alt="powerball-logo-shade-color" title="" width="135" height="95" ALIGN="left">
+                              <span><a href="#">Powerball Numbers, Live Results For 11/10/18</a></span>
+                          </div>
+                          <div class="p-2 last-div">
+                              <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/06/23/chip-and-joanna-gaines-welcome-baby-number-5.jpg" alt="Chip And Joanna Gaines Welcome Baby Number 5" title="" width="135" height="90" ALIGN="left">
+                              <span><a href="#">Chip And Joanna Gaines Returning To TV</a></span>
+                          </div>
+                        </div>         
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                      <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/embed_xs/public/2018/11/05/2018-11-16-11-23cover1800x2400.jpg" height="311" width="290">
+                      <a href="#" class="link">Features</a>
+                    </div>
+                    <div class="p-2">
+                        <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2018/10/30/culoutlander01.jpg" alt="CUL_Outlander_01" title="" width="290" height="311">
+                        <a href="#" class="link">How Starz's 'Outlander' Became a Juggernaut</a>
+                    </div>
+                    <div class="p-2">
+                        <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2018/10/30/horsupersonic01.jpg" alt="HOR_Supersonic_01" title="" width="290" height="311">
+                        <a href="#" class="link">NASA Supersonic Tech Cuts Transcontinental Flight Time</a>
+                    </div>
+                    <div class="p-2">
+                        <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2018/10/19/secret-interview-02.jpg" alt="Secret Interview 02" title="" width="290" height="311">
+                        <a href="#" class="link">Jamal Khashoggi on ‘Reformist’ Saudi Crown Prince MBS</a>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div class="p-2">
+                        <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2018/10/18/femongolia1314.jpg" alt="FE_Mongolia_13_14" title="" width="290" height="311">
+                        <a href="#" class="link">Frédéric Lagrange Captures 17 Years of Mongolia</a>
+                    </div>
+                    <div class="p-2">
+                        <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2018/10/16/perrussiahack01.jpg" alt="PER_RussiaHack_01" title="" width="290" height="311">
+                        <a href="#" class="link">Russia May Have Already Hacked the 2018 Midterms</a>
+                    </div>
+                    <div class="p-2">
+                        <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/md_thumb/public/2018/10/16/horclimate011000124846.jpg" alt="HOR_Climate_01_1000124846" title="" width="290" height="311">
+                        <a href="#" class="link">NASA Satellite to Show How Much, How Fast Seas Rise</a>
+                    </div>
+                    <div class="p-2">
+                        <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/mobile/public/2018/08/06/infocus011008336000.jpg" alt="Heat of the Moment" title="" width="290" height="320">
+                        <a href="#" class="link">Heat of the Moment</a>
+                    </div>
+                  </div>  
+                  <br>
+                  <h4 class="editor text-center">EDITOR'S PICK</h4>
+                <div class="d-flex flex-row">
+                    <div class="p-2">
+                        <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/gettyimages-481517220_0.jpg" alt="GettyImages-481517220" title="" width="290" height="193">
+                        <a href="#" class="link">U.S. Stumbles with N. Korea, Looks to Russia and China</a>
+                        <div class="summary">
+                            Amid separate conflicts with Russia and China, the U.S. has attempted to force the two countries to adhere to sanctions on North Korea and enlist their support in achieving peace.
+                        </div>
+                    </div>
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/110918trumpwomen.jpg" alt="11_09_18_TrumpWomen" title="" width="290" height="193">
+                        <a href="#" class="link">Trump Attacked Six Black Women in Three Days: ‘Nasty’</a>
+                        <div class="summary">
+                                “She doesn't know what the hell she's doing," the president said of journalist April Ryan.
+                        </div>
+                    </div>
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/gettyimages-517371888.jpg" alt="GettyImages-517371888" title="" width="290" height="193">
+                        <a href="#" class="link">Autism Linked to Zinc Deficiency in Childhood</a>
+                        <div class="summary">
+                                A zinc deficiency may impair the function of synapses, which enable brain cells to communicate with one another.
+                        </div>
+                    </div>
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/08/gettyimages-1058489408.jpg" alt="democrats popular vote, house, senate" title="" width="290" height="193">
+                        <a href="#" class="link">Dems Sweep Popular Vote but Only Control House</a>
+                        <div class="summary">
+                                The results heavily favored the Democrats, who took back 28 House seats and seven governorships.
+                        </div>
+                    </div>
+                </div> 
+                <div class="d-flex flex-row">
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/gettyimages-1015023660.jpg" alt="GettyImages-1015023660" title="" width="290" height="193">
+                        <a href="#" class="link">Scotland First Country to Include LGBTI School Lessons</a>
+                        <div class="summary">
+                                State schools in Scotland will include the teaching of LGBTI rights in its curricula.
+                        </div>
+                    </div>
+                    <div class="p-2">
+                            <img  src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/gettyimages-969995842.jpg" alt="GettyImages-969995842" title="" width="290" height="193">
+                        <a href="#" class="link">Trump Will Snub Macron's Peace Forum During WWI Event</a>
+                        <div class="summary">
+                            “It doesn't matter if those who don't believe in multilateralism aren't there,” a French official said.
+                        </div>
+                    </div>
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/beto-votes-ted-cruz.jpg" alt="beto votes ted cruz" title="" width="290" height="193">
+                        <a href="#" class="link">Majority of Native-Born Texans Voted Beto: Exit Poll</a>
+                        <div class="summary">
+                            Ted Cruz might have painted Beto O'Rourke as a liberal supported by outsiders, but more native-born Texans voted for the Democrat than Cruz.
+                        </div>
+                    </div>
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/10/30/caravanmigrantsmallnumbers.jpg" alt="migrant caravan, trump administration, number" title="" width="290" height="193">
+                        <a href="#" class="link">Trump to Refuse Asylum at Mexico Border</a>
+                        <div class="summary">
+                                In an effort to curb future caravan-like refugees, the president looks to refuse asylum at the country's southern border.
+                        </div>
+                    </div>
+                </div> 
+                <br>
+                <h4 class="editor text-center">FEATURED SLIDESHOWS</h4>
+                <div class="d-flex flex-row">
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/ultimate-ears-wonderboom.jpg" alt="ultimate-ears-wonderboom" title="" width="397" height="265">
+                            <a href="#" class="link slide">15 Great Tech Gifts Under $100</a>
+                    </div>
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/rise-black-panther.png" alt="rise of the black panther" title="" width="397" height="265">
+                            <a href="#" class="link slide">The Best Comic Books and Graphic Novels of 2018</a>
+                    </div>
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/oprah-winfrey.jpg" alt="OPRAH WINFREY" title="" width="397" height="265">
+                            <a href="#" class="link slide">Oprah's Favorite Things 2018: 51 Fabulous Gift Ideas</a>
+                    </div>
+                </div>   
+                <div class="d-flex flex-row">
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/0-wayne-williams-mugshot-e1276280330289-copy.jpg" alt="0 Wayne-Williams-Mugshot-e1276280330289 copy" title="" width="397" height="265">
+                            <a href="#" class="link slide">50 Fascinating True Crime Podcasts You Need To Hear</a>
+                    </div>
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/0-gettyimages-1065298014.jpg" alt="0 GettyImages-1065298014" title="" width="397" height="265">
+                            <a href="#" class="link slide">Victoria’s Secret Fashion Show 2018 in Pictures: Kendall Jenner, Bella Hadid and Gigi Hadid Grace the Catwalk</a>
+                    </div>
+                    <div class="p-2">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/08/0-gettyimages-55831992.jpg" alt="0 GettyImages-55831992" title="" width="397" height="265">
+                            <a href="#" class="link slide">Armistice Day 100 Years On: 57 Incredible Photos From World War I</a>
+                    </div>
+                </div> 
+                <hr>
+                <h4 class="p-3 font-weight-bold text-danger">U.S.</h4> 
+                <div class="d-flex flex-row">
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/12/gettyimages-945928264.jpg" alt="GettyImages-945928264" title="" width="397" height="265">
+                            <a href="#" class="link slide">Cohen Prays Michelle Obama Can Unite America </a>
+                    </div>
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/12/1112steve-bannon.jpg" alt="11_12_Steve Bannon" title="" width="397" height="265">
+                            <a href="#" class="link slide">John Oliver Compiles Steve Bannon Fails</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="p-3">
+                                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/12/gettyimages-1060408712.jpg" alt="GettyImages-1060408712" title="" width="135" height="90" ALIGN="left">
+                                <span><a href="#" class="side">Video: Dad Drives Daughter to Safety From Camp Fire</a></span>
+                        </div>
+                        <div class="p-3 border">
+                                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/12/fort-lauderdale-airport.jpg" alt="Fort Lauderdale Airport" title="" width="135" height="90" ALIGN="left">
+                                <span><a href="#" class="side">Fort Lauderdale Airport Lockdown Lifted After Threat</a></span>
+                        </div>
+                        <div class="p-3 d-flex">
+                                <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/11/gettyimages-1059759300-594x594_0.jpg" alt="gettyimages-1059759300-594x594" title="" width="135" height="90">
+                                <span><a href="#" class="side">Camp Fire Now Deadliest in California History</a></span>
+                        </div>
+                    </div>
+                </div> 
+                <hr>
+                <h4 class="p-3 font-weight-bold text-danger">World</h4> 
+                <div class="d-flex flex-row">
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/11/trump-putin-lunch.jpg" alt="Trump Putin lunch" title="" width="397" height="265">
+                            <a href="#" class="link slide">Trump And Putin Briefly Meet In Paris</a>
+                    </div>
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/11/gettyimages-1053441452.jpg" alt="GettyImages-1053441452" title="" width="397" height="265">
+                            <a href="#" class="link slide">Turkish Journalist Reveals Khashoggi's Last Words </a>
+                    </div>
+                    <div class="d-flex flex-column">
+                            <div class="p-3">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/11/gettyimages-1060137366.jpg" alt="GettyImages-1060137366" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">Trump's Motorcade Attacked by Topless Women</a></span>
+                            </div>
+                            <div class="p-3 border">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/11/trolley.jpg" alt="trolley" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">Homeless Hero Used Shopping Cart to Stop Terror Attack</a></span>
+                            </div>
+                            <div class="p-3 d-flex">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/10/trump-paris.jpg" alt="Trump in Paris" title="" width="135" height="90">
+                                    <span><a href="#" class="side" ALIGN="left">Trump Called 'Inadequate' For Missing WWI Ceremony </a></span>
+                            </div>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="p-3 font-weight-bold text-danger">Business</h4> 
+                <div class="d-flex flex-row">
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/11/trump-state-union.jpg" alt="Trump State of the Union" title="" width="397" height="265">
+                            <a href="#" class="link slide">US Will Soon Spend More On Interest Than Medicaid</a>
+                    </div>
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/110918avenattiindict.jpg" alt="11_09_18_AvenattiIndict" title="" width="397" height="265">
+                            <a href="#" class="link slide">Avenatti Calls for ‘Immediate Indictment’ of Trump</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                            <div class="p-3">
+                                    <img  src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/02/110218giulianidon.jpg" alt="11_02_18_GiulianiDon" title="" width="135" height="90"ALIGN="left">
+                                    <span><a href="#" class="side">Rudy Giuliani Got Republican Name Wrong in Endorsement</a></span>
+                            </div>
+                            <div class="p-3 border">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/10/30/image-00.jpg" alt="00" title="" width="135" height="90">
+                                    <span><a href="#" class="side">The Most (and Least) Expensive States to Live In</a></span>
+                            </div>
+                            <div class="p-3 d-flex">
+                                    <img class="mapping-sm_thumb lazysize  lazyloaded" src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/10/28/trump-phone.jpg" alt="Trump phone" title="" width="135" height="90">
+                                    <span><a href="#" class="side">Gab Asks Trump To Stop 'Big Tech' Free Speech Collusion</a></span>
+                            </div>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="p-3 font-weight-bold text-danger">Tech & science</h4> 
+                <div class="d-flex flex-row">
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/bomb-donation.png" alt="bomb donation" title="" width="397" height="265">
+                            <a href="#" class="link slide">Streamer Ice Poseidon Crashes Car in Alaska</a>
+                    </div>
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/09/185201web.jpg" alt="185201_web" title="" width="397" height="265">
+                            <a href="#" class="link slide">DNA of Ancient Mummy Shines Light on American History</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                            <div class="p-3">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/09/119asteroid.jpg" alt="11_9_Asteroid" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">Asteroid Will Pass Earth Closer Than the Moon Saturday</a></span>
+                            </div>
+                            <div class="p-3 border">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/08/gettyimages-963487920.jpg" alt="GettyImages-963487920" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">This Is How to Be a Successful Artist, Scientists Find</a></span>
+                            </div>
+                            <div class="p-3 d-flex">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/08/file-20181107-74751-cvb5yv.jpg" alt="file-20181107-74751-cvb5yv" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">Great Pyramid May Have Been Built With This Ramp</a></span>
+                            </div>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="p-3 font-weight-bold text-danger">Culture</h4> 
+                <div class="d-flex flex-row">
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/12/drxrvauvaaa3ev5.jpg" alt="DrxRVauVAAA3EV5" title="" width="397" height="265">
+                            <a href="#" class="link slide">Douglas Rain, 2001: A Space Odyssey's HAL, Dies</a>
+                    </div>
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/12/0-tambien-copy.jpg" alt="0 tambien copy" title="" width="397" height="265">
+                            <a href="#" class="link slide">The Best Spanish-language Movies Of All Time</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                            <div class="p-3">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/11/theprincessswitchunit05711.jpg" alt="ThePrincessSwitch_Unit_05711" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">Everything We Know About 'The Princess Switch'</a></span>
+                            </div>
+                            <div class="p-3 border">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/11/gettyimages-632082944.jpg" alt="GettyImages-632082944" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">People's Choice Awards: How To Watch Live</a></span>
+                            </div>
+                            <div class="p-3 d-flex">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/11/gettyimages-504473552.jpg" alt="GettyImages-504473552" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">Ned Stark On Which Stark Will Survive 'Game of Thrones'</a></span>
+                            </div>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="p-3 font-weight-bold text-danger">Sports</h4> 
+                <div class="d-flex flex-row">
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/12/gettyimages-1060553532.jpg" alt="GettyImages-1060553532" title="" width="397" height="265">
+                            <a href="#" class="link slide">LeBron 'Is Garbage': James Cops Criticism as Lakers Win</a>
+                    </div>
+                    <div class="p-3">
+                            <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm/public/2018/11/12/gettyimages-1066309372.jpg" alt="GettyImages-1066309372" title="" width="397" height="265">
+                            <a href="#" class="link slide">Mahomes Skips Interview Following Tragic Family News</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                            <div class="p-3">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/12/gettyimages-1060356998.jpg" alt="GettyImages-1060356998" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">Dion Lewis Slams 'Cheap' Patriots for Losing to Titans</a></span>
+                            </div>
+                            <div class="p-3 border">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/11/12/gettyimages-1060541826.jpg" alt="GettyImages-1060541826" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">Video: Zeke Elliott Hurdles over Eagles Defender</a></span>
+                            </div>
+                            <div class="p-3 d-flex">
+                                    <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/sm_thumb/public/2018/10/17/goff.jpg" alt="goff" title="" width="135" height="90" ALIGN="left">
+                                    <span><a href="#" class="side">WATCH: Jared Goff uses 'Halle Berry' audible</a></span>
+                            </div>
+                    </div>
+                </div>
+                <hr>
+                <footer class="d-flex flex-row">
+                    <div class="d-flex">
+                    <img src="https://asmruniversity.files.wordpress.com/2018/08/newsweek-logo.png" class="newsweek" Width="250px" height="30px" ALIGN="left">
+                    <span><p class="copyright">© 2018 Newsweek</p></span>
+                    </div>
+                    <div class="w-20 footer-img">
+                <img src="https://kwsymphony.ca/wp-content/uploads/2018/08/kisspng-facebook-social-media-computer-icons-linkedin-soci-gray-5ac493cf1c2975.7867418415228323351154.png" width="25px">
+                <img src="https://i1.wp.com/www.aliem.com/wp-content/uploads/2016/12/Twitter-icon-gray.png?fit=256%2C306&ssl=1" width="30px">
+                <img src="http://alinacyranek.com/images/icons/google-plus.png" width="25px">
+                <img src="https://static1.squarespace.com/static/5a6e87cadc2b4ae060710bd9/t/5abd625803ce643db980c240/1522361132800/instagram+grey.png" width="25px">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/tumblr-172-599122.png" width="35px">
+                <img src="https://images.vexels.com/media/users/3/131245/isolated/preview/9351735cd3a456e88ad876588ab9e503-linkedin-logo-by-vexels.png" width="25px">
+                </div>
+                </footer>
+                <hr>
+                <div class="d-inline-block last-footer">
+                        <a href="#">About Us</a>
+                        <a href="#">Corrections</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Travel</a>
+                        <a href="#">Advertise</a>
+                        <a href="#">Copyright</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Terms of Sale</a><br>
+                        <a href="#">Archive</a>
+                        <a href="#">Announcements</a>
+                        <a href="#">Consent preferences</a>
+                </div>
+           </div>
+          
+          
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
-
 </html>
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

@@ -1,0 +1,224 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fuild {
+  height: 100px;
+}
+
+.bg-danger {
+  font-weight: bolder;
+  font-size: 60px;
+  background-color: red !important;
+}
+
+.page-nav {
+  background-color: white !important;
+  border-bottom: 1px solid lightgray;
+}
+
+.col4 {
+  position: relative;
+  height: 2819px;
+  width: 71%;
+}
+
+.page-nav a {
+  color: black !important;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 700;
+  border-right: 1px solid lightgray !important;
+  padding-right: 20px !important;
+  padding-left:  20px !important;
+}
+
+.page-nav a:hover {
+  color: red !important;
+  text-decoration: none;
+}
+
+.block-title {
+  color: gray;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.p-2 h3 a {
+  color: black;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-size: 23px;
+}
+
+
+.p-2 h3 a:hover {
+  text-decoration: red underline;
+}
+
+.related {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 10px; 
+}
+
+.related a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.related a:hover {
+  color: red;
+}
+
+.d-flex {
+  width: 400px;
+}
+
+.bg-article {
+  width: 591px;
+  padding-left: 5% !important;
+}
+
+.bg-article img {
+  width: 550px !important;
+}
+
+span h4 a {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+span h4 a:hover {
+  text-decoration: red underline !important;
+}
+
+.bg-area {
+  width: 591px;
+}
+
+.last-div {
+  width: 350px;
+}
+
+span h4 {
+  padding-left: 27% !important;
+}
+
+.padding {
+  padding-left: 27% !important;
+}
+
+.border-div {
+  border-top: 1px solid lightgray;
+  margin-left: 5% !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.more {
+  padding-left: 8% !important;
+}
+
+.last-div span a {
+  color: black;
+  font-weight: bolder;
+}
+
+.last-div span a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.last-div p a {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+.last-div p a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.last-div {
+  border-bottom: 1px solid lightgray;
+  margin-left: 2%;
+  padding-top: 5% !important;
+  padding-bottom: 5% !important;
+}
+
+.last-div img {
+  margin-right: 3%;
+}
+
+.link {
+  color: black;
+  font-weight: bolder;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: red underline;
+}
+
+.editor {
+  font-weight: bolder;
+  border-bottom: 1px solid lightgray;
+}
+
+.summary {
+  font-size: small;
+}
+
+.slide {
+  font-size: 18px;
+  font-size: bolder;
+}
+
+.side {
+  color: black;
+  font-weight: bolder;
+}
+
+.side:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.p-3 img {
+  margin: 5px;
+}
+
+.border {
+  border-right: none !important;
+  border-left: none !important;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+footer {
+  width: 1300px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-footer a {
+  color: gray;
+  margin: 5px;
+  padding-right: 10px;
+  border-right: 1px solid lightgray;
+}
+
+.last-footer a:hover {
+  color: black;
+  text-decoration: none;
+}
