@@ -1,9 +1,23 @@
   
 /* global */
 
+
+
 @font-face {
   font-family: 'Genericons';
   src: url('fonts/Genericons.woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+  color: #000;
 }
 
 body {
@@ -234,7 +248,7 @@ h1 {
   font-weight: 700;
 }
 
-.top-story-section p {
+.top-stories p {
   font-size: 0.8125rem;
 }
 
@@ -286,18 +300,17 @@ figure img {
   color: #f72210;
 }
 
-/* more-stories-section */
 
-.more-stories-section figure {
+.extra-stories figure {
   margin: 0;
 }
 
-.more-stories-section article {
+.extra-stories article {
   padding-top: 0.7rem;
   border-top: 1px solid #ddd;
 }
 
-.more-stories-section img {
+.extra-stories img {
   width: 135px;
   height: 106px;
   margin-right: 1rem;
@@ -305,33 +318,33 @@ figure img {
   float: left;
 }
 
-.more-stories-section h3 {
+.extra-stories h3 {
   font-size: 1.0625rem;
 }
 
-.more-stories-section p {
+.extra-stories p {
   font-size: 0.8125rem;
 }
 
 @media (min-width: 768px) {
-  .more-stories-section p {
+  .extra-stories p {
     font-size: 0.9375rem;
   }
 }
 
 @media (min-width: 540px) {
-  .more-stories-section img {
+  .extra-stories img {
     float: none;
   }
 
-  .more-stories-section article {
+  .extra-stories article {
     display: flex;
   }
 }
 
 /* culture&travel-section */
 
-.culture-and-travel-section {
+.culture-and-travel {
   margin-bottom: 1.5rem;
 }
 
@@ -355,7 +368,7 @@ figure img {
   color: rgba(39, 39, 39, 0.7);
 }
 
-.mini-category a {
+.sub-topics a {
   padding: 0.2rem 0.4rem;
   font-size: 0.8125rem;
   background: #c2d4d7;
