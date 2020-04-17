@@ -1,8 +1,3 @@
-  
-/* global */
-
-
-
 @font-face {
   font-family: 'Genericons';
   src: url('fonts/Genericons.woff');
@@ -30,103 +25,75 @@ body {
 .container-md,
 .container-sm,
 .container-xl {
-  max-width: 1310px;
+  max-width: 1350px;
 }
 
 a {
   color: #000;
 }
 
-/* icons */
 
-.icon {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
-.i-search {
-  background-image: url('https://g.newsweek.com/www/images/icon-search-glass.svg');
-}
 
-.i-n {
-  background-image: url('https://g.newsweek.com/www/images/logo-n1.svg');
-}
-
-.i-right-arrow {
-  background-image: url('https://g.newsweek.com/www/images/icon-arrow-right.svg');
-}
-
-.i-right-arrow-r {
-  background-image: url('images/icon-arrow-right-r.svg');
-}
-
-.i-right-arrow-b {
-  background-image: url('images/icon-arrow-right-b.svg');
-}
-
-/* wrapper */
 .main-header,
 main,
 .main-footer {
   background-color: #fff;
 }
 
-/* main-header */
 
 .main-header {
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
-.hero {
+.man {
   min-height: 50px;
   background-color: rgb(247, 34, 16);
   color: #fff;
 }
 
-.hero .logo {
+.man .logo {
   margin-left: 1rem;
   display: block;
   align-self: center;
   fill: #fff;
 }
 
-.hero .logo svg {
+.man .logo svg {
   height: 20px;
 }
 
 @media (min-width: 768px) {
   main {
-    border-bottom: 1px solid #f4f5f6;
+    border-bottom: 2px solid #f4f5f6;
   }
 }
 
-@media (min-width: 992px) {
-  .hero {
+@media (min-width: 990px) {
+  .man {
     position: relative;
     padding: 3.3rem 0.6rem 0.95rem 0.6rem;
   }
 
-  .hero .logo {
+  .man .logo {
     margin-left: initial;
     position: absolute;
     left: 50%;
-    align-self: auto;
-    transform: translateX(-50%);
     margin: 0 auto;
+    align-self: auto;
     width: 396px;
     height: 60px;
+    transform: translateX(-50%);
+
   }
 
-  .hero .logo svg {
+  .man .logo svg {
     height: auto;
   }
 }
 
 .auth a {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.875rem;
   color: #fff;
   text-decoration: none;
@@ -145,7 +112,7 @@ main,
 }
 
 .auth a:last-of-type .icon {
-  margin-left: 1rem;
+  margin-left: 3rem;
   width: 0.5rem;
   height: 0.875rem;
 }
@@ -155,13 +122,13 @@ main,
 }
 
 .menu-bar {
-  width: 24px;
   height: 4px;
+  width: 24px;
   background-color: #fb9a94;
 }
 
 .menu-bar:nth-child(2) {
-  margin: 4px 0;
+  margin: 5px 0;
 }
 
 @media (min-width: 481px) {
@@ -174,8 +141,9 @@ main,
   }
 
   .menu-bar {
-    width: 30px;
     height: 4px;
+    width: 30px;
+
   }
 
   .auth a:first-of-type {
@@ -191,7 +159,6 @@ main,
   }
 }
 
-/* main-nav */
 
 .main-nav {
   position: relative;
@@ -200,14 +167,14 @@ main,
 .main-nav ul {
   width: 100%;
   display: flex;
-  align-items: center;
   text-align: center;
+  align-items: center;
   padding: 0.9375rem 0;
   white-space: nowrap;
 }
 
 .main-nav ul a {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.1875rem;
   color: #000;
 }
@@ -235,13 +202,8 @@ main,
   border: none;
 }
 
-.icon.i-search {
-  width: 1.25rem;
-  height: 1.25rem;
-}
 
 
-/* main */
 
 h1 {
   font-size: 1.375rem;
@@ -252,7 +214,7 @@ h1 {
   font-size: 0.8125rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -263,7 +225,7 @@ h1 {
 }
 
 section h2 {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #999;
 }
@@ -342,7 +304,6 @@ figure img {
   }
 }
 
-/* culture&travel-section */
 
 .culture-and-travel {
   margin-bottom: 1.5rem;
@@ -386,8 +347,6 @@ figure img {
   }
 }
 
-/* featured-section */
-/* sponsored-section */
 
 .featured-section article {
   margin-bottom: 1.25rem;
@@ -510,7 +469,6 @@ figure img {
   font-size: 1.0625rem;
 }
 
-/* sign-up */
 
 .icon-wrapper {
   margin-right: 0.5rem;
@@ -728,7 +686,6 @@ figure img {
   }
 }
 
-/* featured-slideshows-section */
 
 .featured-slideshows-section h2 {
   padding-bottom: 0.75rem;
@@ -803,7 +760,6 @@ figure img {
   }
 }
 
-/* categories-section */
 
 .categories-section .category-section {
   margin-bottom: 1.75rem;
@@ -828,27 +784,27 @@ figure img {
   margin-bottom: 1.5rem;
 }
 
-.secondary-category figure img {
+.side-bar-lower figure img {
   width: auto;
 }
 
-.secondary-category figure {
+.side-bar-lower figure {
   margin-bottom: 0.5rem;
 }
 
-.secondary-category h4 {
+.side-bar-lower h4 {
   margin-left: 1rem;
   font-size: 1.0625rem;
   font-weight: 700;
 }
 
-.secondary-category article {
+.side-bar-lower article {
   display: flex;
   border-bottom: 1px solid #d9d9d9;
   margin-bottom: 0.5rem;
 }
 
-.secondary-category article:last-of-type {
+.side-bar-lower article:last-of-type {
   border-bottom: none;
 }
 
@@ -870,7 +826,7 @@ figure img {
     gap: 2rem;
   }
 
-  .secondary-category figure img {
+  .side-bar-lower figure img {
     width: 95px;
     height: 95px;
     object-fit: cover;
@@ -881,33 +837,32 @@ figure img {
   }
 }
 
-/* subscription-section */
 
-.subscription-section {
+.subscription {
   padding-left: 15px;
   padding-right: 15px;
   background-color: #fff;
 }
 
-.subscription-section section {
+.subscription section {
   background-color: #fff;
 }
 
-.subscription-section h2 {
+.subscription h2 {
   color: #f72210;
 }
 
-.subscription-section article {
+.subscription article {
   text-align: center;
 }
 
-.subscription-section .subscribe-section article {
+.subscription .subscribe-section article {
   padding: 1.5rem 0;
   background-color: #f4f5f6;
 }
 
-.subscription-section .sign-up-section,
-.subscription-section .subscribe-section {
+.subscription .sign-up-section,
+.subscription .subscribe-section {
   padding-bottom: 1.25rem;
 }
 
@@ -929,20 +884,20 @@ figure img {
   width: initial;
 }
 
-.subscription-section header {
+.subscription header {
   padding: 0.5rem 1rem 0 1rem;
 }
 
-.subscription-section h3 {
+.subscription h3 {
   font-size: 1.25rem;
 }
 
-.subscription-section p {
+.subscription p {
   margin-top: 1rem;
   font-size: 0.9375rem;
 }
 
-.subscription-section a {
+.subscription a {
   display: inline-flex;
   align-items: center;
   padding: 0.4rem 0.6rem;
@@ -952,7 +907,7 @@ figure img {
   background-color: #f72210;
 }
 
-.subscription-section a .icon {
+.subscription a .icon {
   margin-left: 0.75rem;
   width: 8px;
   height: 14px;
@@ -973,7 +928,7 @@ figure img {
 }
 
 @media (min-width: 768px) {
-  .subscription-section {
+  .subscription {
     padding-top: 2rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #f4f5f6;
@@ -999,11 +954,11 @@ figure img {
     padding-left: 2rem;
   }
 
-  .subscription-section h3 {
+  .subscription h3 {
     font-size: 1.5rem;
   }
 
-  .subscription-section .subscribe-section article {
+  .subscription .subscribe-section article {
     height: 100%;
     display: flex;
     align-items: center;
@@ -1011,7 +966,7 @@ figure img {
 }
 
 @media (min-width: 992px) {
-  .subscription-section {
+  .subscription {
     margin: 0 auto !important;
     max-width: 1310px;
     padding-left: 30px;
@@ -1037,7 +992,6 @@ figure img {
   }
 }
 
-/* main-footer */
 
 .main-footer {
   padding-bottom: 2rem;
@@ -1200,7 +1154,6 @@ figure img {
   }
 }
 
-/* grey separator bar */
 .bar::before {
   content: '';
   display: block;
@@ -1217,15 +1170,4 @@ figure img {
     display: none;
   }
 }
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
