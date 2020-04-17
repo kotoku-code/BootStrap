@@ -10,11 +10,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-
-a {
-  color: #000;
-}
-
 body {
   background-color: #f4f5f6;
   font-family: 'Roboto Condensed', sans-serif;
@@ -32,15 +27,11 @@ a {
   color: #000;
 }
 
-
-
-
 .main-header,
 main,
 .main-footer {
   background-color: #fff;
 }
-
 
 .main-header {
   margin-bottom: 4px;
@@ -76,15 +67,14 @@ main,
   }
 
   .man .logo {
+    margin: 0 auto;
     margin-left: initial;
     position: absolute;
     left: 50%;
-    margin: 0 auto;
     align-self: auto;
     width: 396px;
     height: 60px;
     transform: translateX(-50%);
-
   }
 
   .man .logo svg {
@@ -143,7 +133,6 @@ main,
   .menu-bar {
     height: 4px;
     width: 30px;
-
   }
 
   .auth a:first-of-type {
@@ -158,7 +147,6 @@ main,
     display: block !important;
   }
 }
-
 
 .main-nav {
   position: relative;
@@ -198,12 +186,9 @@ main,
 
 #search-input {
   width: 3.8rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   border: none;
 }
-
-
-
 
 h1 {
   font-size: 1.375rem;
@@ -237,7 +222,7 @@ section h3 {
 
 section p {
   font-size: 0.9375rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 figure {
@@ -261,7 +246,6 @@ figure img {
   font-weight: 700;
   color: #f72210;
 }
-
 
 .extra-stories figure {
   margin: 0;
@@ -304,7 +288,6 @@ figure img {
   }
 }
 
-
 .culture-and-travel {
   margin-bottom: 1.5rem;
 }
@@ -346,7 +329,6 @@ figure img {
     grid-column: 1 / -1;
   }
 }
-
 
 .featured-section article {
   margin-bottom: 1.25rem;
@@ -403,13 +385,14 @@ figure img {
   }
 }
 
-
 .opinion {
   margin-bottom: 1.75rem;
 }
 
 .opinion article {
   display: flex;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .opinion figure {
@@ -432,11 +415,6 @@ figure img {
 
 .opinion figure img {
   width: auto;
-}
-
-.opinion article {
-  margin-bottom: 0.5rem;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .latest-news article:last-of-type,
@@ -468,7 +446,6 @@ figure img {
   margin-left: 1rem;
   font-size: 1.0625rem;
 }
-
 
 .icon-wrapper {
   margin-right: 0.5rem;
@@ -521,7 +498,6 @@ figure img {
   width: 0.5rem;
   height: 0.875rem;
 }
-
 
 .magazine .category a {
   font-size: 1rem;
@@ -640,7 +616,6 @@ figure img {
   }
 }
 
-
 .editors-pick h2 {
   padding-bottom: 0.75rem;
   border-bottom: 1px solid #d9d9d9;
@@ -686,7 +661,6 @@ figure img {
   }
 }
 
-
 .featured-slideshows-section h2 {
   padding-bottom: 0.75rem;
   border-bottom: 1px solid #d9d9d9;
@@ -709,7 +683,7 @@ figure img {
   width: 28px;
   height: 28px;
   position: absolute;
-  background: #ff0000;
+  background: #f00;
   top: 4px;
   right: -4px;
   z-index: 10;
@@ -759,7 +733,6 @@ figure img {
     font-size: 1.25rem;
   }
 }
-
 
 .categories-section .category-section {
   margin-bottom: 1.75rem;
@@ -836,7 +809,6 @@ figure img {
     font-size: 1.25rem;
   }
 }
-
 
 .subscription {
   padding-left: 15px;
@@ -992,10 +964,9 @@ figure img {
   }
 }
 
-
 .main-footer {
   padding-bottom: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .main-footer,
@@ -1016,12 +987,6 @@ figure img {
 .social-group {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #d9d9d9;
-}
-
-.footer-social-links {
-  display: flex;
-  margin: 0;
-  font-family: 'Genericons';
 }
 
 .footer-social-links a {
@@ -1170,4 +1135,3 @@ figure img {
     display: none;
   }
 }
-

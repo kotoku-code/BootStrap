@@ -13,6 +13,7 @@ module.exports = {
         ignore: ['after-comment']
       }
     ],
+    "no-descending-specificity":null,
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always-single-line',
     'at-rule-semicolon-newline-after': 'always',
@@ -50,6 +51,7 @@ module.exports = {
     'declaration-bang-space-before': 'always',
     'declaration-block-semicolon-newline-after':
       'always-multi-line',
+      
     'declaration-block-semicolon-space-after':
       'always-single-line',
     'declaration-block-semicolon-space-before': 'never',
